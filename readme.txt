@@ -22,10 +22,10 @@ This is an early version undergoing active development. If you have any issues o
 
 Contact:
 Christian Bosselmann
-Department of Neurology and Epileptology, Hertie Institute for Clinical Brain Research, University Hospital TŸbingen
-Methods in Medical Informatics, Department of Computer Science, University of TŸbingen
+Department of Neurology and Epileptology, Hertie Institute for Clinical Brain Research, University Hospital Tuebingen
+Methods in Medical Informatics, Department of Computer Science, University of Tuebingen
 Hoppe-Seyler-Str. 3
-72076 TŸbingen
+72076 Tuebingen
 Email: christian.bosselmann@med.uni-tuebingen.de
 Tel: 0049 70701290
 Twitter: @cmbosselmann
