@@ -11,6 +11,8 @@ This MTL-SVM predicts the overall net functional effect of non-synonymous missen
 
 For additional information, please refer to GitHub (christianbosselmann), AIMe Registry (IFtQVF), the Help option of the R Shiny App interface, and the manuscript.
 
+Training data, preprocessing pipelines and a pre-trained model object are provided for reproducibility. For any other queries, please contact me directly (see below). Happy to help!
+
 ---
 
 Do:
