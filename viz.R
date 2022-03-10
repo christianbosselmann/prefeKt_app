@@ -33,6 +33,10 @@ colors_in = c(rgb(20/255,93/255,160/255,0.4))
 par(oma=c(0,1,1,1))
 par(mar=c(0,0,0,0))
 
+# set up device
+plot.new() 
+dev.control("enable")
+
 # plot with default options:
 radarchart( data, axistype = 1, 
             # custom polygon
@@ -51,6 +55,7 @@ legend(x = 0.9, y = 0.6, legend = paste("Neutral:", round(out$prob.Neutral, digi
 
 # record 
 p <- recordPlot()
+dev.off()
 
 # another plot for confidence, i.e. distance from hyperplane
 data2 <- data.frame(out$conf.LOF_Neutral, out$conf.LOF_GOF, out$conf.Neutral_GOF) %>%

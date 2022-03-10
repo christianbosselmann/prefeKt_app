@@ -1,0 +1,13 @@
+name: prefeKt
+title:
+username:
+account: cbosselmann
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 5824086
+bundleId: 5666790
+url: https://cbosselmann.shinyapps.io/prefeKt/
+when: 1646925408.86899
+lastSyncTime: 1646925408.86901
+asMultiple: FALSE
+asStatic: FALSE

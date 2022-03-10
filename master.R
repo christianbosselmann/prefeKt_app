@@ -2,19 +2,16 @@
 # PREdicting the Functional Effects of Kv muTations
 
 # packages
-library("librarian")
-librarian::shelf(tidyverse,
-                 tidymodels,
-                 data.table,
-                 openxlsx,
-                 yardstick,
-                 caret,
-                 bestNormalize,
-                 kernlab,
-                 e1071,
-                 data.table,
-                 magic,
-                 quiet = TRUE)
+library(tidyverse)
+library(tidymodels)
+library(data.table)
+library(openxlsx)
+library(yardstick)
+library(caret)
+library(bestNormalize)
+library(kernlab)
+library(e1071)
+library(magic)
 
 # get preprocessed training data set
 train <- read_csv("training_data.csv")
@@ -134,7 +131,7 @@ prediction <- predict(model, test) %>%
 
 # print output
 out <- cbind(input, prediction)
-write.xlsx(out, "output.xlsx")
+# write.xlsx(out, "output.xlsx")
 
 # verbose output for app
 verb_out <- paste("This variant is predicted to be:", out$prediction, sep = " ")

@@ -2,11 +2,10 @@
 # PREdicting the Functional Effects of Kv muTations
 
 # packages
-library("librarian")
-librarian::shelf(tidyverse,
-                 shiny,
-                 shinyalert,
-                 openxlsx)
+library(tidyverse)
+library(shiny)
+library(shinyalert)
+library(openxlsx)
 
 train <- read_csv("training_data.csv")
 aa_braun <- read_csv("aa_braun.csv")
@@ -84,7 +83,8 @@ shinyApp(
         paste(verb_out, " ", sep="\n")
       })
       
-      output$plot <- renderPlot(p)
+      output$plot <- renderPlot(
+        replayPlot(p), height = 500)
       
       output$plot2 <- renderPlot(p2)
       
